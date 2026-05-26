@@ -3,9 +3,9 @@ export default function StatsBar({ records }) {
 
   return (
     <section className="stats-grid" aria-label="数据统计">
-      <Stat label="本月喝酒次数" value={stats.monthlyCount} suffix="次" />
-      <Stat label="最常去酒吧" value={stats.favoriteBar} />
-      <Stat label="最常见心情" value={stats.commonMood} />
+      <Stat label="This month" value={stats.monthlyCount} suffix="次" />
+      <Stat label="Top bar" value={stats.favoriteBar} />
+      <Stat label="Mood loop" value={stats.commonMood} />
     </section>
   );
 }

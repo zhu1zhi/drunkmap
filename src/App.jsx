@@ -25,12 +25,17 @@ export default function App() {
     <main className="app-shell">
       <section className="hero" aria-labelledby="app-title">
         <div className="hero-copy">
-          <p className="eyebrow">Private drinking journal</p>
+          <p className="eyebrow">No login. Just tonight.</p>
           <h1 id="app-title">Drunk Map</h1>
           <p className="subtitle">记录你的每一杯微醺</p>
+          <div className="vibe-strip" aria-label="产品特点">
+            <span>Local-only</span>
+            <span>3 sec log</span>
+            <span>Aftertaste</span>
+          </div>
         </div>
         <div className="hero-mark" aria-hidden="true">
-          DM
+          <span>DM</span>
         </div>
       </section>
 

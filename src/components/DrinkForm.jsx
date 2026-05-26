@@ -21,7 +21,7 @@ export default function DrinkForm({ onSave }) {
 
   return (
     <section className={`panel form-panel ${isSaving ? "is-saving" : ""}`} aria-labelledby="new-record">
-      <SectionHeading index="01" title="新增记录" id="new-record" />
+      <SectionHeading index="01" title="今晚这一杯" id="new-record" />
 
       <form onSubmit={handleSubmit} className="drink-form">
         <div className="quick-grid">
@@ -112,7 +112,7 @@ export default function DrinkForm({ onSave }) {
 
         <button className="save-button" type="submit">
           <span aria-hidden="true">+</span>
-          保存记录
+          Save the sip
         </button>
       </form>
     </section>

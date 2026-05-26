@@ -3,15 +3,15 @@ import { SectionHeading } from "./DrinkForm.jsx";
 export default function HistoryList({ records }) {
   return (
     <section className="history-section" aria-labelledby="history-title">
-      <SectionHeading index="02" title="历史记录" id="history-title" />
+      <SectionHeading index="02" title="Afterglow" id="history-title" />
 
       <div className="record-list">
         {records.length ? (
           records.map((record) => <RecordCard key={record.id} record={record} />)
         ) : (
           <div className="empty-state">
-            <p>还没有记录。</p>
-            <span>第一杯会出现在这里，像一条安静的地图标记。</span>
+            <p>今晚还很干净。</p>
+            <span>第一杯保存后，会在这里留下一个很轻的坐标。</span>
           </div>
         )}
       </div>
@@ -22,6 +22,7 @@ export default function HistoryList({ records }) {
 function RecordCard({ record }) {
   return (
     <article className="record-card">
+      <span className="record-line" aria-hidden="true" />
       <div>
         <h3>
           {record.drinkName}
